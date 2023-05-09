@@ -26,7 +26,7 @@ def order(request):
                        'created_pizza_pk': created_pizza_pk})
     else:
         form = PizzaForm()
-        return render(request, 'pizza/order.html', {'multiple_form': multiple_form, 'pizzaform': form})
+        return render(request, 'myapp/order.html', {'multiple_form': multiple_form, 'pizzaform': form})
 
 
 def edit_order(request, pk):
