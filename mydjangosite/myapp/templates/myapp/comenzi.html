@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comenzi</title>
+
+</head>
+<body>
+    <p>
+        <a href=" {% url 'home' %}">Comanda pizza</a>
+    </p>
+    <h1> Comanda pizza</h1>
+    <form>
+        <label for="topping1">Topping1: </label>
+        <input id="topping1" type="text" name="topping1">
+        <label for="topping2">Topping2: </label>
+        <input id="topping2" type="text" name="topping2">
+        <label for="dimensiune">Dimensiune: </label>
+        <select id="dimensiune" name="dimensiune">
+            <option value="Mica">Mica</option>
+            <option value="Mare">Mare</option>
+            <option value="Medie">Medie</option>
+        </select>
+    </form>
+
+</body>
+</html>
